@@ -1,0 +1,36 @@
+%ic {
+    font-family: "icon";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class*="_icon-"] {
+    &:before {
+        @extend %ic;
+        display: block;
+    }
+}
+
+._icon-heand:before {
+    content: "\e900";
+    color: #fff;
+}
+
+._icon-house:before {
+    content: "\e901";
+    color: #fff;
+}
+
+._icon-house_srch:before {
+    content: "\e902";
+}
+
+._icon-loupe:before {
+    content: "\e903";
+    color: #fff;
+}
